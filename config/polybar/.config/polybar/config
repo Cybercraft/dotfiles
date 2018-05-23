@@ -36,20 +36,15 @@ modules-left = i3§
 modules-center = xwindow
 modules-right = cpu memory spotify volume date powermenu
 
-[bar/center]
-inherit = bar/default
-monitor = DVI-I-1
-modules-right = redshift powermenu
-tray-position = right
-tray-detached = false 
-tray-padding = 0
-
 [bar/left]
 inherit = bar/default
 monitor = HDMI-0
 modules-left = i3
 modules-center = xwindow
 modules-right = cpu memory spotify volume date powermenu
+tray-position = right
+tray-detached = false 
+tray-padding = 0
 
 [bar/right]
 inherit = bar/default
@@ -57,6 +52,9 @@ monitor = DP-3
 modules-left = i3
 modules-center = xwindow
 modules-right = cpu memory spotify volume date powermenu
+tray-position = right
+tray-detached = false 
+tray-padding = 0
 
 [module/i3]
 type = internal/i3

@@ -34,7 +34,7 @@ font-2 = MaterialIcons:size=11;4
 
 modules-left = i3§
 modules-center = xwindow
-modules-right = spotify volume wireless wired date battery powermenu
+modules-right = spotify volume wireless wired date battery keyboard powermenu
 
 [bar/left]
 inherit = bar/default
@@ -93,6 +93,20 @@ ws-icon-8 = 9;
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+
+[module/keyboard]
+type = internal/xkeyboard
+
+; Available tags:
+;   <label-layout> (default)
+;   <label-indicator> (default)
+format = <label-layout>
+format-spacing = 0
+label-layout = %layout%
+
+; List of indicators to ignore
+blacklist-0 = num lock
+blacklist-1 = scroll lock
 
 [module/filesystemroot]
 type = internal/fs
